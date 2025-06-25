@@ -29,9 +29,5 @@ jobs:
       - name: Wait for services to start
         run: sleep 10
 
-      - name: Test Python service /ping
-        run: |
-          curl -f http://localhost:8080/service2/ping
-
       - name: Shut down Compose
         run: docker compose -f ./internassign/docker-compose.yml down

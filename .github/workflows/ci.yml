@@ -28,6 +28,6 @@ jobs:
 
       - name: Wait for services to start
         run: sleep 10
-
+        
       - name: Shut down Compose
         run: docker compose -f ./internassign/docker-compose.yml down

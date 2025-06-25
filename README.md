@@ -11,14 +11,12 @@ Run:
 
 docker compose up --build
 
-(This will build and start all services.)
 
 4. Access the services at:
 - [http://localhost:8080/service1/ping](http://localhost:8080/service1/ping)
 - [http://localhost:8080/service1/hello](http://localhost:8080/service1/hello)
 - [http://localhost:8080/service2/ping](http://localhost:8080/service2/ping)
 - [http://localhost:8080/service2/hello](http://localhost:8080/service2/hello)
-
 
 
 ---

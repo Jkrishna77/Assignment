@@ -3,8 +3,13 @@
 ## Setup
 
 1. Make sure Docker and Docker Compose are installed.
-2. Clone this repository.
-3. Run: docker compose up --build
+2. Clone this repository:
+   ```sh
+   git clone https://github.com/Jkrishna77/Assignment.git
+   cd Assignment
+Run:
+
+docker compose up --build
 
 (This will build and start all services.)
 

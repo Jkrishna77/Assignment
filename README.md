@@ -11,18 +11,6 @@ Run:
 
 docker compose up --build
 
-OR:
-
-Quick Start (One-Liner)
-You can also start the stack directly using the compose file from GitHub, no clone needed:
-
-docker compose -f https://raw.githubusercontent.com/Jkrishna77/Assignment/main/docker-compose.yml up --build
-
-Note:
-If you are on Windows, download the file first:
-curl -O https://raw.githubusercontent.com/Jkrishna77/Assignment/main/docker-compose.yml
-docker compose up --build
-
 (This will build and start all services.)
 
 4. Access the services at:
@@ -30,6 +18,7 @@ docker compose up --build
 - [http://localhost:8080/service1/hello](http://localhost:8080/service1/hello)
 - [http://localhost:8080/service2/ping](http://localhost:8080/service2/ping)
 - [http://localhost:8080/service2/hello](http://localhost:8080/service2/hello)
+
 
 
 ---

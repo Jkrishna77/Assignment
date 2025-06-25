@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [develop]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build service_1 (Go)
+        run: docker build -t service_1:ci ./internassign/service_1
+
+      - name: Build service_2 (Python)
+        run: docker build -t service_2:ci ./internassign/service_2
+
+      - name: Build nginx
+        run: docker build -t nginx:ci ./internassign/nginx
+
+      - name: Docker Compose up (detached)
+        run: docker compose -f ./internassign/docker-compose.yml up -d
+
+      - name: Wait for services to start
+        run: sleep 10
+        
+      - name: Shut down Compose
+        run: docker compose -f ./internassign/docker-compose.yml down

@@ -31,7 +31,7 @@ jobs:
 
       - name: Test Python service /ping
         run: |
-          curl -f http://localhost:8080/service2/ping
-
+          run: curl -f http://nginx:80/service2/ping
+          
       - name: Shut down Compose
         run: docker compose -f ./internassign/docker-compose.yml down

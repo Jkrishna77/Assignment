@@ -32,7 +32,7 @@ jobs:
         run: docker build -t nginx:ci ./internassign/nginx
 
       - name: Docker Compose up (detached)
-        run: docker compose -f ./internassign/docker-compose.yml up -d
+        run: docker compose -f docker-compose.yml up -d
 
       - name: Wait for services to start
         run: sleep 10

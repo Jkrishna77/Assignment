@@ -17,6 +17,11 @@ docker compose up --build
 - [http://localhost:8080/service2/ping](http://localhost:8080/service2/ping)
 - [http://localhost:8080/service2/hello](http://localhost:8080/service2/hello)
 
+Quick Start (One-Liner)
+You can also start the stack directly using the compose file from GitHub, no clone needed:
+
+docker compose -f https://raw.githubusercontent.com/Jkrishna77/Assignment/develop/docker-compose.yml up --build
+
 ---
 
 ## How Routing Works

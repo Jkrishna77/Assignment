@@ -6,7 +6,7 @@
 2. Clone this repository:
    ```sh
    git clone https://github.com/Jkrishna77/Assignment.git
-   cd Assignment
+   cd Assignment/internassign
 Run:
 
 docker compose up --build
@@ -16,12 +16,13 @@ OR:
 Quick Start (One-Liner)
 You can also start the stack directly using the compose file from GitHub, no clone needed:
 
-docker compose -f https://raw.githubusercontent.com/Jkrishna77/Assignment/main/docker-compose.yml up --build
+docker compose -f https://raw.githubusercontent.com/Jkrishna77/Assignment/main/internassign/docker-compose.yml up --build
+
 
 Note:
 If you are on Windows, download the file first:
 
-curl -O https://raw.githubusercontent.com/Jkrishna77/Assignment/main/docker-compose.yml
+curl -O https://raw.githubusercontent.com/Jkrishna77/Assignment/main/internassign/docker-compose.yml
 
 docker compose up --build
 

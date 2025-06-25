@@ -1,7 +1,5 @@
 # DevOps Intern Assignment – Nginx Reverse Proxy + Docker
 
-# Nginx Reverse Proxy with Docker Compose
-
 ## Setup
 
 1. Make sure Docker and Docker Compose are installed.

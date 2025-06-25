@@ -32,8 +32,6 @@ services:
       context: ./nginx
     image: jayakrishnaf5/nginx:latest
     container_name: nginx
-    ports:
-      - "8080:80"
     depends_on:
       service_1:
         condition: service_started
